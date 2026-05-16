@@ -7,6 +7,8 @@ Bring your own API key from Groq (free), OpenAI, or Anthropic Claude — paste t
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Version](https://img.shields.io/badge/version-1.0.0-purple)
 
+![revAIser main view](screenshots/main-light.png)
+
 ---
 
 ## Why revAIser?
@@ -16,6 +18,16 @@ Bring your own API key from Groq (free), OpenAI, or Anthropic Claude — paste t
 - **Switchable providers.** Groq (free), OpenAI, Anthropic — pick whichever fits your wallet and latency needs.
 - **Bilingual UI.** English / 日本語. Tray icon, installer, and menu all localized.
 - **Dark mode** follows your OS theme.
+
+## Screenshots
+
+| Light mode | Dark mode |
+|---|---|
+| ![Light](screenshots/main-light.png) | ![Dark](screenshots/main-dark.png) |
+
+| Settings | Japanese UI |
+|---|---|
+| ![Settings](screenshots/settings.png) | ![Japanese](screenshots/japanese.png) |
 
 ---
 
