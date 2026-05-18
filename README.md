@@ -5,7 +5,7 @@ Bring your own API key from Groq (free), OpenAI, or Anthropic Claude — paste t
 
 ![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?logo=windows)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Version](https://img.shields.io/badge/version-1.0.0-purple)
+![Version](https://img.shields.io/badge/version-1.0.1-purple)
 
 ![revAIser main view](screenshots/main-light.png)
 
@@ -37,7 +37,7 @@ Bring your own API key from Groq (free), OpenAI, or Anthropic Claude — paste t
 🚧 *Awaiting certification — see [Releases](https://github.com/misstouch-taro/revAIser/releases) for an installer in the meantime.*
 
 ### Direct download (GitHub Releases)
-Grab the latest `revAIser-Windows-1.0.0-Setup.exe` from the **[Releases](https://github.com/misstouch-taro/revAIser/releases)** page.
+Grab the latest `revAIser-Windows-1.0.1-Setup.exe` from the **[Releases](https://github.com/misstouch-taro/revAIser/releases)** page.
 
 The installer is unsigned at the moment, so Windows SmartScreen may warn you the first time. Click **More info → Run anyway**. (Once the Store listing is live, those builds will be Microsoft-signed.)
 
