@@ -6,69 +6,71 @@
 revAIser
 
 ### Short description (200 char max)
-AI-powered text proofreader. Bring your own API key from Groq (free), OpenAI, or Anthropic Claude — accept AI suggestions hunk-by-hunk in a clean side-by-side diff view.
+AI-powered text proofreader. Use your own API key from Groq (free), OpenAI, or Anthropic Claude — review and accept each AI suggestion one at a time in a side-by-side diff view.
 
 ### Description (long, max ~10000 char)
-**revAIser is a desktop proofreading tool that puts AI suggestions in front of you in a diff view — accept, reject, or edit each change with a single keystroke.**
+"The AI rewrote my text, but I have no idea what it actually changed..."
+"I don't want to accept everything at once — I want to look at each suggestion myself."
 
-Paste or open any text file. Press **Ctrl+Enter** to send your text to the AI provider you've configured (Groq is free, OpenAI and Anthropic also supported). The AI's suggestions appear in the right pane. Step through the differences with **Alt+↓**, accept the current change with **Alt+←**, or accept everything with **Ctrl+Shift+A**. Save with **Ctrl+S**.
+revAIser is built for exactly that.
 
-**Bring your own key**
-revAIser does not store anything on a developer-controlled server. You supply your own API key from Groq, OpenAI, or Anthropic; the key is encrypted on your machine using the Windows credential store. No subscription, no developer account, no telemetry.
+It's a Windows desktop text proofreader that puts AI suggestions next to your original text in a side-by-side diff view. You step through every change the AI proposes, accept the ones you agree with, and skip the rest. No black box, no all-or-nothing.
 
-**Designed for speed**
-- WinMerge-style diff with character-level highlighting
-- Per-hunk accept / reject (no "accept all or nothing")
-- Detail pane shows the current change side-by-side
-- Ctrl+Shift+Y from anywhere on Windows runs revAIser on your current clipboard
+**What it's good for**
+- Last-mile proofreading on an email draft before you hit Send
+- Polishing blog posts, notes, or documentation
+- Non-native English or Japanese writing
+- Reviewing text drafted by another AI tool, one sentence at a time
 
-**Bilingual**
-English and 日本語 are both supported, from the installer through the tray menu. Toggle language at any time from Settings.
+**How to use it**
+1. Paste text into the left pane, or drag a text file in
+2. The first time, set your API key in Settings (Groq is free; sign-up takes a minute)
+3. Press Ctrl+Enter — the AI's suggestions appear in the right pane
+4. Use Alt+↓ to step to the next change, Alt+← to accept the current one, Ctrl+S to save
 
-**Dark mode**
-Follows your Windows theme automatically.
+**Choose your AI provider**
+- **Groq** — free, very fast (Llama 3.3 70B). Sign up at https://console.groq.com — no credit card required
+- **OpenAI** — paid, wide model selection (GPT-4o, GPT-4.1, etc.). https://platform.openai.com
+- **Anthropic Claude** — paid, strong with nuanced writing (Claude Sonnet / Haiku). https://console.anthropic.com
 
-**Three AI providers, your choice**
-- **Groq** — free, very fast (Llama 3.3 70B). Sign up at https://console.groq.com
-- **OpenAI** — paid, broad model selection (GPT-4o, GPT-4.1, etc.). https://platform.openai.com
-- **Anthropic Claude** — paid, strong at nuanced writing (Claude Sonnet, Haiku). https://console.anthropic.com
+You set the API key once in Settings, and revAIser sends your text only to the provider you chose. There is no revAIser developer server in the loop. Your key is encrypted on your machine using the Windows credential store. revAIser has no subscription, no ads, and no upsell — your only cost is the AI provider's own usage fee (zero if you pick Groq).
 
-**Privacy**
-revAIser does not collect or transmit any data to the developer. The text you submit is sent only to the AI provider you have configured, governed by that provider's terms. See the full Privacy Policy at https://github.com/misstouch-taro/revAIser/blob/main/PRIVACY.md
+**Other features**
+- Character-level highlighting so you see exactly which word or letter changed
+- Detail pane that shows the current change in context
+- "Accept all" button (Ctrl+Shift+A) for when you trust the AI on a whole document
+- English and 日本語 UI, switchable from Settings — including the installer and tray menu
+- Dark mode follows your Windows theme automatically
+- Ctrl+Shift+Y, from anywhere in Windows, runs revAIser on your clipboard contents
 
 **Keyboard shortcuts**
 - Ctrl+O — Open file
 - Ctrl+S — Save
 - Ctrl+Enter — Run AI check
-- Alt+↑ / Alt+↓ — Previous / next hunk
-- Alt+← — Apply current hunk
-- Ctrl+Shift+A — Apply all hunks
+- Alt+↑ / Alt+↓ — Previous / next change
+- Alt+← — Apply current change
+- Ctrl+Shift+A — Apply all changes
 - Ctrl+Z — Undo
 - Ctrl+Shift+Y — Global: launch revAIser with clipboard contents
-- Ctrl + Scroll wheel — Font size
+- Ctrl + scroll wheel — Font size
 
-**Use cases**
-- Proofreading email drafts before sending
-- Cleaning up notes, blog posts, or documentation
-- Polishing non-native English / Japanese writing
-- Reviewing AI-generated text from another tool
-
-**Free, no ads, no upsell.** revAIser is a single-purpose tool. The only cost is the AI provider you pick — and Groq is free.
+**Privacy**
+The text you submit is sent only to the AI provider you configured (Groq, OpenAI, or Anthropic), and is governed by that provider's privacy policy. Nothing reaches the developer of revAIser — no telemetry, no analytics, no account on our side. Full privacy policy: https://github.com/misstouch-taro/revAIser/blob/main/PRIVACY.md
 
 ### What's new in this version
-First public release of revAIser. AI-powered proofreading with Groq, OpenAI, and Anthropic Claude — your text, your key, your computer.
+1.0.1 — Microsoft Store tile icon fix. No functional changes from 1.0.0.
 
-### Features (~10 short bullet points; shown as feature list on Store page)
-- AI proofreading with Groq (free), OpenAI, or Anthropic Claude
-- Side-by-side diff view with character-level highlighting
-- Per-hunk accept / reject — keyboard or mouse
-- Clipboard-to-revAIser global shortcut (Ctrl+Shift+Y)
+### Features (~10 short bullet points)
+- AI proofreading via Groq (free), OpenAI, or Anthropic Claude
+- Side-by-side diff so you see every change the AI proposes
+- Accept or reject each suggestion individually — no all-or-nothing
+- Character-level highlighting shows exactly what changed
+- Use your own API key; no subscription, no developer-side data collection
+- API key encrypted locally via the Windows credential store
 - English and 日本語 UI, switchable in-app
 - Dark mode follows your Windows theme
-- API key encrypted locally via Windows credential store
-- No telemetry, no developer-side data collection
-- Drag and drop text files to open
-- Free; you supply your own AI API key
+- Ctrl+Shift+Y to launch from anywhere with the clipboard contents
+- Free; the only cost is the AI provider's usage (Groq is free)
 
 ### Search terms / keywords (max 7, each ≤30 chars)
 proofreading, diff, AI editor, Groq, OpenAI, Claude, text correction
@@ -90,69 +92,71 @@ misstouch-taro
 revAIser
 
 ### 簡単な説明 (200文字以内)
-AI でテキスト校正。Groq(無料)/ OpenAI / Anthropic Claude の API キーを自分で用意し、ハンク単位で AI 提案を反映できる差分エディタ。
+AI でテキスト校正。Groq(無料)/ OpenAI / Anthropic Claude の API キーを設定して、AI の提案を1つずつ確認しながら反映できる差分エディタ。
 
 ### 説明 (詳細)
-**revAIser は AI の校正提案を差分ビューで提示するデスクトップ校正ツールです。各変更を1つずつ確認・反映・拒否できます。**
+「AI に直してもらったけど、どこを直されたか分からない…」
+「全部一括反映は怖いから、提案を1つずつ確認したい」
 
-テキストをペーストするかファイルを開き、**Ctrl+Enter** を押すと、設定中の AI プロバイダ(Groq は無料、OpenAI / Anthropic 対応)に送信。AI の提案は右ペインに表示されます。**Alt+↓** で差分を巡回、**Alt+←** で現在の差分を反映、**Ctrl+Shift+A** で全反映。**Ctrl+S** で保存します。
+revAIser はそんなあなたのためのテキスト校正ツールです。
 
-**Bring Your Own Key 方式**
-revAIser は開発者サーバーに何も保存しません。API キーはあなたのもの(Groq / OpenAI / Anthropic で取得)を使用し、Windows の資格情報ストアで暗号化されます。サブスクリプション不要、開発者アカウント不要、テレメトリ送信なし。
+AI(Groq / OpenAI / Anthropic Claude)が提案した校正内容を、元のテキストと左右に並べた差分ビューで表示します。AI が「ここを変えたほうがいい」と提案した箇所を1つずつ巡回しながら、納得できる変更だけを反映できます。AI に丸投げではなく、最終判断はあなたの手の中に。
 
-**スピード重視設計**
-- WinMerge 風の差分表示(文字単位ハイライト付き)
-- ハンク単位での承認・拒否(「全部 OK / 全部 NG」の二択ではない)
-- 詳細ペインで現在の変更を並べて確認
-- Ctrl+Shift+Y はグローバルショートカット — どこからでもクリップボード内容で起動
+**こんな場面で使えます**
+- 送信前のメール下書きの最終チェック
+- ブログ記事・ドキュメントの校正
+- 非ネイティブの英語・日本語推敲
+- 他の AI で生成した文章を一文ずつ吟味したいとき
 
-**日英バイリンガル**
-インストーラ、トレイメニュー、設定画面まで日本語と英語に対応。設定からいつでも切替可能。
+**使い方**
+1. 左側のペインにテキストを貼り付けるか、ファイルをドラッグ&ドロップ
+2. 初回のみ「設定」でプロバイダーの API キーを登録(Groq なら無料、登録は1分)
+3. Ctrl+Enter で AI に送信 → 右ペインに提案が並んで表示される
+4. Alt+↓ で次の差分へ、Alt+← で気に入った変更だけ反映、Ctrl+S で保存
 
-**ダークモード**
-Windows のテーマに自動追従。
-
-**3つのAIプロバイダから選択**
-- **Groq** — 無料・高速(Llama 3.3 70B)。https://console.groq.com で登録
+**3つのプロバイダから選べる**
+- **Groq** — 無料・高速(Llama 3.3 70B)。https://console.groq.com でクレカ不要登録
 - **OpenAI** — 有料・モデル豊富(GPT-4o, GPT-4.1 等)。https://platform.openai.com
-- **Anthropic Claude** — 有料・繊細な文章に強い(Claude Sonnet / Haiku)。https://console.anthropic.com
+- **Anthropic Claude** — 有料・文章ニュアンスに強い(Claude Sonnet / Haiku)。https://console.anthropic.com
 
-**プライバシー**
-revAIser は開発者にデータを一切送信しません。あなたが送信したテキストは、設定中のAIプロバイダにのみ届き、そのプロバイダの規約に従って扱われます。詳細はプライバシーポリシー(https://github.com/misstouch-taro/revAIser/blob/main/PRIVACY.md)を参照してください。
+API キーは「設定」画面で一度入力するだけ。revAIser は開発者側のサーバーを持っていないので、あなたのテキストは選んだ AI プロバイダ以外には届きません。キーは Windows の資格情報ストアで暗号化保存されます。revAIser からのサブスクリプション課金や広告は一切なし。コストは選んだプロバイダの利用料だけです(Groq を選べばゼロ円)。
+
+**その他の機能**
+- 文字単位の差分ハイライト(単語・文字レベルでどこが変わったか一目瞭然)
+- 詳細ペインで現在の差分の前後比較
+- 全差分を一括反映ボタン(Ctrl+Shift+A)も用意 — AI を信頼できるときに
+- 日本語・英語 UI(インストーラ・トレイメニュー含めて切替可)
+- Windows テーマ追従ダークモード
+- Ctrl+Shift+Y でどこからでもクリップボード内容を校正
 
 **キーボードショートカット**
 - Ctrl+O — ファイルを開く
 - Ctrl+S — 保存
 - Ctrl+Enter — AI チェック実行
-- Alt+↑ / Alt+↓ — 前/次のハンクへ
-- Alt+← — 現在のハンクを反映
-- Ctrl+Shift+A — 全ハンク反映
+- Alt+↑ / Alt+↓ — 前/次の差分へ
+- Alt+← — 現在の差分を反映
+- Ctrl+Shift+A — 全差分を反映
 - Ctrl+Z — 元に戻す
 - Ctrl+Shift+Y — グローバル: クリップボード内容で起動
 - Ctrl + マウスホイール — フォントサイズ変更
 
-**こんな使い方**
-- メール下書きを送信前に校正
-- メモ・ブログ・ドキュメントの整理
-- 非ネイティブの英語・日本語の推敲
-- 他ツールで生成した AI 文章のレビュー
-
-**完全無料、広告なし、課金導線なし。** revAIser は単機能ツールです。コストは選んだAIプロバイダのAPIだけ — Groqなら無料です。
+**プライバシー**
+入力したテキストは、設定中の AI プロバイダ(Groq / OpenAI / Anthropic)のサーバーにのみ送信され、各プロバイダの規約に従って処理されます。revAIser 開発者にはデータが届きません(テレメトリ・解析・アカウント登録すべてなし)。詳細はプライバシーポリシー(https://github.com/misstouch-taro/revAIser/blob/main/PRIVACY.md)を参照してください。
 
 ### このバージョンの新機能
-revAIser の初公開リリース。Groq / OpenAI / Anthropic Claude を使った AI 校正 — あなたのテキスト、あなたの API キー、あなたの PC で完結。
+1.0.1 — Microsoft Store のタイルアイコン表示を修正。機能変更はありません。
 
 ### 機能(箇条書き)
 - Groq(無料)/ OpenAI / Anthropic Claude による AI 校正
-- 文字単位でハイライトされる左右差分ビュー
-- ハンク単位の承認・拒否(キーボード/マウス両対応)
-- クリップボードからのグローバル起動(Ctrl+Shift+Y)
-- 日本語/英語 UI(アプリ内で切替可)
+- AI の提案を左右の差分ビューで全件確認
+- 1件ずつ承認・拒否できる(全部反映の二択ではない)
+- 文字単位のハイライトで「どこが変わったか」が一目瞭然
+- API キーは自分のものを設定 — サブスクリプション課金なし、開発者にデータが届かない
+- API キーは Windows の資格情報ストアで暗号化保存
+- 日本語/英語 UI(設定からいつでも切替)
 - Windows テーマ追従ダークモード
-- API キーは Windows 資格情報ストアで暗号化
-- テレメトリなし・開発者側データ収集なし
-- ドラッグ&ドロップでファイルを開ける
-- 完全無料(AI API キーはユーザー持ち込み)
+- Ctrl+Shift+Y でどこからでもクリップボード内容を校正
+- 完全無料(コストは選んだ AI プロバイダの利用料のみ。Groq ならゼロ円)
 
 ### 検索キーワード(最大7個、各30文字以内)
 校正, 文章校正, AI 校正, 差分, Groq, OpenAI, Claude
